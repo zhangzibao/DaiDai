@@ -1,0 +1,128 @@
+.zoom-left {
+    animation-name: left_slide, scale_change;
+    animation-duration: 0.5s, 0.5s;
+    animation-delay: 0s, 0.5s;
+    animation-timing-function: ease, ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.zoom-bottom {
+    animation-name: top_slide, scale_change;
+    animation-duration: 0.5s, 0.5s;
+    animation-delay: 0s, 0.5s;
+    animation-timing-function: ease, ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes left_slide {
+    from {
+        transform: scale(0.3) translateX(-700%);
+
+    }
+    to {
+        transform: scale(0.3);
+
+    }
+}
+
+@keyframes top_slide {
+    from {
+        transform: scale(0.3) translateY(700%);
+    }
+    to {
+        transform: scale(0.3);
+
+    }
+}
+
+@keyframes scale_change {
+    from {
+        transform: scale(0.3);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+.jelly {
+    animation-name: jelly_animate;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes jelly_animate {
+    0% {
+        transform: scale(1.4, 0.6);
+    }
+    30% {
+        transform: scale(1, 1.2);
+    }
+    60% {
+        transform: scale(1.2, 0.6);
+    }
+    90% {
+        transform: scale(1, 1.2);
+    }
+}
+
+.po-left-a {
+    animation-name: round_slide;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes round_slide {
+    0% {
+        left: -40%;
+    }
+    60% {
+        left: 16%;
+    }
+    75% {
+        left: 15%;
+    }
+    90% {
+        left: 14%;
+    }
+    100% {
+        left: 15%;
+
+    }
+}
+
+.po-right-a {
+    animation-name: round_slide_2;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes round_slide_2 {
+    0% {
+        right: -40%;
+    }
+    60% {
+        right: 11%;
+    }
+    75% {
+        right: 10%;
+    }
+    90% {
+        right: 9%;
+    }
+    100% {
+        right: 10%;
+
+    }
+}

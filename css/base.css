@@ -1,0 +1,44 @@
+html {
+    overflow-y: hidden;
+}
+
+html, body {
+    height: 100%;
+}
+
+*, body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: '微软雅黑', serif;
+}
+
+img, iframe {
+    border: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+.page-80 {
+    height: 80%;
+}
+
+.page-70 {
+    height: 70%;
+}
+
+.page-65 {
+    height: 65%;
+}
+
+.page-50 {
+    height: 50%;
+    /*//bottom:40%;*/
+}
+
+.page-40 {
+    height: 40%;
+}
